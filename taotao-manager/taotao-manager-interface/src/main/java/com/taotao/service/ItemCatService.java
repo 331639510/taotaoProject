@@ -6,5 +6,5 @@ import com.taotao.common.pojo.EasyUITreeNode;
 
 public interface ItemCatService {
 	
-	List<EasyUITreeNode> getItemCatList(long parentId);
+	List<EasyUITreeNode> getCatList(long parentId);
 }
