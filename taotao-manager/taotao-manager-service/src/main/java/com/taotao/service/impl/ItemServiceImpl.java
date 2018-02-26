@@ -3,6 +3,7 @@ package com.taotao.service.impl;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
@@ -19,6 +20,7 @@ import com.taotao.service.ItemService;
  * <p>Company: www.itcast.cn</p> 
  * @version 1.0
  */
+@Service
 public class ItemServiceImpl implements ItemService {
 	@Autowired
 	private TbItemMapper itemMapper;
