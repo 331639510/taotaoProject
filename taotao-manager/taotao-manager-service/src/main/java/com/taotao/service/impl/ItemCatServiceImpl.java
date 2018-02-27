@@ -27,7 +27,7 @@ public class ItemCatServiceImpl implements ItemCatService {
 	private TbItemCatMapper itemCatMapper;
 	
 	@Override
-	public List<EasyUITreeNode> getCatList(long parentId) {
+	public List<EasyUITreeNode> getItemCatList(long parentId) {
 		//根据父节点id查询子节点列表
 		TbItemCatExample example = new TbItemCatExample();
 		//设置查询条件
@@ -48,8 +48,6 @@ public class ItemCatServiceImpl implements ItemCatService {
 			//添加到节点列表
 			resultList.add(node);
 		}
-		
 		return resultList;
 	}
-
 }
